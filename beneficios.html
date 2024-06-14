@@ -14,9 +14,9 @@
             box-sizing: border-box;
             background-color: #ffffff; /* Cor de fundo branca para o body */
             padding-top: 60px; /* Espaço para o header */
+            font-family: Arial, sans-serif; /* Fonte padrão */
         }
         header {
-            background-color: rgba(255, 255, 255, 0.9); /* Fundo do header com leve transparência */
             padding: 10px 20px; /* Espaçamento interno */
             position: fixed; /* Fixa o header no topo */
             width: 100%; /* Garante que o header ocupe toda a largura */
@@ -38,17 +38,34 @@
             background-color: #ffffff; /* Cor de fundo branca para o retângulo */
             padding: 20px;
         }
-        h2 {
-            text-align: center;
+        h1 {
+            text-align: left; /* Alinha o título à esquerda */
+            font-size: 32px; /* Aumenta o tamanho da fonte */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+        h2{
+            font-size: 40px; /* Aumenta o tamanho da fonte */
+        }
+        .descricao {
             margin-bottom: 20px;
+            color: #666666; /* Cor mais clara para a descrição */
+        }
+        .descricao p {
+            font-size: 16px; /* Tamanho da fonte para o texto de descrição */
+            line-height: 1.6; /* Espaçamento entre linhas do texto */
+        }
+        .imagem {
+            margin-bottom: 20px; /* Espaço abaixo da imagem */
+        }
+        .imagem img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima do contêiner */
+            height: auto; /* Altura automática proporcional à largura */
         }
         .beneficio {
             font-weight: bold;
             display: block;
             margin-bottom: 5px;
-        }
-        .descricao {
-            margin-bottom: 20px;
+            color: #01b9aa; /* Cor verde para os benefícios */
         }
         footer {
             text-align: center;
@@ -71,6 +88,12 @@
         <main class="content">
             <section>
                 <h2>Benefícios Psicológicos</h2>
+                <div class="descricao">
+                    <p>A prática regular de atividades esportivas traz inúmeros benefícios para a saúde mental e emocional. Abaixo estão alguns dos principais benefícios psicológicos:</p>
+                </div>
+                <div class="imagem">
+                    <img src="desporto.jpg" alt="Imagem de ilustração">
+                </div>
                 <div class="descricao">
                     <p><span class="beneficio">1. Redução do Estresse:</span> A prática regular de exercícios ajuda a diminuir os níveis de cortisol, o hormônio do estresse. Quando você se exercita, seu corpo libera endorfinas, que são substâncias químicas no cérebro que atuam como analgésicos naturais e melhoram o humor.</p>
                 </div>
