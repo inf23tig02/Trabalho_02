@@ -12,19 +12,18 @@
             min-height: 100vh;
             margin: 0;
             box-sizing: border-box;
-            background-image: url('img/img1.jpg'); /* Substitua pelo caminho da sua imagem */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Mantém a imagem fixa no fundo */
-            padding-top: 60px; /* Ajusta o espaçamento para não cortar o conteúdo sob o header */
+            background-color: #f0f0f0; /* Cor de fundo para garantir que a imagem não seja visível abaixo do header */
+            padding-top: 60px; /* Espaço para o header */
         }
         header {
-            background-color: transparent; /* Fundo transparente */
+            background-image: url('img/img1.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed; /* Mantém a imagem fixa no fundo apenas no header */
             padding: 10px 20px; /* Espaçamento interno */
             position: fixed; /* Fixa o header no topo */
             width: 100%; /* Garante que o header ocupe toda a largura */
             z-index: 1; /* Garante que o header fique acima da imagem de fundo */
-            box-shadow: none; /* Remove qualquer sombra */
         }
         .container {
             flex: 1;
@@ -33,6 +32,8 @@
             align-items: center;
             padding: 20px;
             overflow: auto;
+            background-color: transparent; /* Cor de fundo do conteúdo */
+            margin-top: 60px; /* Espaço para compensar o header fixo */
         }
         .content {
             width: 90%;
