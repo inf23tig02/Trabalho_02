@@ -12,16 +12,15 @@
             min-height: 100vh;
             margin: 0;
             box-sizing: border-box;
-            background-color: #f9f9f9; /* Cor de fundo para o body */
+            background-color: #ffffff; /* Cor de fundo para o body e também para o retângulo branco */
             padding-top: 60px; /* Espaço para o header */
         }
         header {
-            background-color: #f9f9f9; /* Cor de fundo do header */
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo do header com leve transparência */
             padding: 10px 20px; /* Espaçamento interno */
             position: fixed; /* Fixa o header no topo */
             width: 100%; /* Garante que o header ocupe toda a largura */
             z-index: 1; /* Garante que o header fique acima do conteúdo */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave no header para destacá-lo */
         }
         .container {
             flex: 1;
@@ -30,17 +29,14 @@
             align-items: center;
             padding: 20px;
             overflow: auto;
-            background-color: #f9f9f9; /* Cor de fundo do conteúdo */
+            background-color: transparent; /* Cor de fundo transparente para o container */
             margin-top: 60px; /* Espaço para compensar o header fixo */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave no conteúdo */
         }
         .content {
             width: 90%;
             box-sizing: border-box;
-            background-color: #f9f9f9; /* Cor de fundo do retângulo */
-            border-radius: 8px;
+            background-color: #ffffff; /* Cor de fundo do retângulo branco */
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave no retângulo */
         }
         h2 {
             text-align: center;
@@ -53,16 +49,10 @@
         }
         .descricao {
             margin-bottom: 20px;
-            padding: 15px;
-            background-color: #ffffff; /* Cor de fundo dos blocos de descrição */
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave nos blocos de descrição */
         }
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #f9f9f9; /* Cor de fundo do rodapé */
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave no rodapé */
         }
     </style>
 </head>
