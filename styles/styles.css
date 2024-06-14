@@ -87,9 +87,7 @@ main {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-top: 100px; /* For fixed header */
-    position: relative;
-    z-index: 1; /* To be above the overlay */
+    margin-top: 150px; /* Ajuste para adicionar espaço abaixo do cabeçalho fixo */
 }
 
 section {
