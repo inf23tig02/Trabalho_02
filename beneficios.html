@@ -12,35 +12,46 @@
             min-height: 100vh;
             margin: 0;
             box-sizing: border-box;
+            background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Mantém a imagem fixa no fundo */
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+            padding: 10px 20px; /* Espaçamento interno */
+            backdrop-filter: blur(10px); /* Aplica um efeito de desfoque no fundo */
+            position: relative; /* Permite ajustar a posição do header */
+            z-index: 1; /* Garante que o header fique acima da imagem de fundo */
         }
         .container {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px; /* Adiciona margem interna nas laterais da tela */
-            overflow: auto; /* Adiciona rolagem à página inteira */
+            padding: 20px;
+            overflow: auto;
         }
         .content {
-            width: 90%; /* Aumenta a largura do retângulo */
+            width: 90%;
             box-sizing: border-box;
-            background-color: #f9f9f9; /* Fundo para destacar a área do conteúdo */
-            border-radius: 8px; /* Bordas arredondadas */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
-            padding: 20px; /* Adiciona margem interna */
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
         h2 {
             text-align: center;
-            margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+            margin-bottom: 20px;
         }
         .beneficio {
             font-weight: bold;
-            display: block; /* Exibe o benefício como bloco */
-            margin-bottom: 5px; /* Adiciona espaço abaixo do título do benefício */
+            display: block;
+            margin-bottom: 5px;
         }
         .descricao {
-            margin-bottom: 20px; /* Adiciona espaço entre os benefícios */
-            padding: 15px; /* Adiciona padding interno */
+            margin-bottom: 20px;
+            padding: 15px;
         }
         footer {
             text-align: center;
