@@ -3,8 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interação Social</title>
+    <title>Interação Social no Desporto</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #ffffff; /* Cor de fundo branca para o body */
+            padding-top: 60px; /* Espaço para o header */
+            font-family: Arial, sans-serif; /* Fonte padrão */
+        }
+        header {
+            padding: 10px 20px; /* Espaçamento interno */
+            position: fixed; /* Fixa o header no topo */
+            width: 100%; /* Garante que o header ocupe toda a largura */
+            z-index: 1; /* Garante que o header fique acima do conteúdo */
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: auto;
+            background-color: #ffffff; /* Cor de fundo branca para o container */
+            margin-top: 60px; /* Espaço para compensar o header fixo */
+        }
+        .content {
+            width: 90%;
+            box-sizing: border-box;
+            background-color: #ffffff; /* Cor de fundo branca para o retângulo */
+            padding: 20px;
+        }
+        h1 {
+            text-align: left; /* Alinha o título à esquerda */
+            font-size: 32px; /* Aumenta o tamanho da fonte */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+        h2 {
+            font-size: 40px; /* Aumenta o tamanho da fonte */
+        }
+        .descricao {
+            margin-bottom: 20px;
+            color: #666666; /* Cor mais clara para a descrição */
+        }
+        .descricao p {
+            font-size: 20px; /* Tamanho da fonte para o texto de descrição */
+            line-height: 1.6; /* Espaçamento entre linhas do texto */
+        }
+        .imagem {
+            margin-bottom: 20px; /* Espaço abaixo da imagem */
+        }
+        .imagem img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima do contêiner */
+            height: 550px; /* Altura automática proporcional à largura */
+        }
+        .beneficio {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #01b9aa; /* Cor verde para os benefícios */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,24 +80,32 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="beneficios.html">Benefícios Psicológicos</a></li>
-                <li><a href="interacao.html">Interação Social</a></li>
                 <li><a href="conclusao.html">Conclusão e Recursos</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Interação Social</h2>
-            <ul>
-                <li>Benefícios da Interação Social:
-                    <ul>
-                        <li>Desenvolvimento de habilidades sociais</li>
-                        <li>Construção de uma rede de apoio</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </main>
+    <div class="container">
+        <main class="content">
+            <section>
+                <h2>Benefícios do Desporto na Interação Social</h2>
+                <div class="descricao">
+                    <p>A prática regular de desportos não só traz benefícios físicos, mas também promove significativamente a interação social. Abaixo estão alguns dos principais benefícios:</p>
+                </div>
+                <div class="imagem">
+                    <img src="https://conteudo.imguol.com.br/c/entretenimento/d8/2019/12/13/volei-quadra-esporte-coletivo-1576267886040_v2_1240x846.jpg" alt="Pessoas praticando desporto e interagindo socialmente">
+                </div>
+                <div class="descricao">
+                    <p><span class="beneficio">1. Desenvolvimento de Habilidades Sociais:</span> Participar de desportos em equipe promove a interação social e ajuda no desenvolvimento de habilidades como comunicação, cooperação e trabalho em equipe. Essas habilidades são cruciais para estabelecer e manter relacionamentos interpessoais.</p>
+                </div>
+                <div class="descricao">
+                    <p><span class="beneficio">2. Construção de uma Rede de Apoio:</span> A prática regular de desporto cria oportunidades para conhecer novas pessoas e construir uma rede de apoio social. Isso pode ajudar a reduzir a sensação de isolamento e fortalecer o senso de pertencimento e camaradagem.</p>
+                </div>
+                <div class="descricao">
+                    <p><span class="beneficio">3. Melhoria da Qualidade de Vida:</span> Participar de atividades desportivas em grupo pode proporcionar um senso de comunidade e pertencimento, melhorando assim a qualidade de vida geral e o bem-estar emocional.</p>
+                </div>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2024 Influência do Desporto</p>
     </footer>
