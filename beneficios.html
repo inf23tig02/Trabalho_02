@@ -14,8 +14,15 @@
             box-sizing: border-box;
         }
         .container {
-            padding: 0 20px; /* Adiciona margem interna nas laterais da tela */
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            width: 80%; /* Ajuste a largura conforme necessário */
+            max-width: 600px; /* Define um limite máximo de largura */
+            padding: 0 20px; /* Adiciona margem interna nas laterais da tela */
         }
         h2 {
             text-align: center;
@@ -44,7 +51,7 @@
         </nav>
     </header>
     <div class="container">
-        <main>
+        <main class="content">
             <section>
                 <h2>Benefícios Psicológicos</h2>
                 <div class="descricao">
