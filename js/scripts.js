@@ -20,3 +20,4 @@ document.addEventListener("DOMContentLoaded", function() {
         img.classList.add("dynamic-image");
         gallery.appendChild(img);
     });
+});
