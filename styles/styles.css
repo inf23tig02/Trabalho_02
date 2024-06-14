@@ -11,7 +11,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    background: url('../img/img1.jpg') no-repeat center center fixed;
+    background: url('img/img1.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
