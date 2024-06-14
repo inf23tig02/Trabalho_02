@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benefícios Psicológicos</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
@@ -18,11 +18,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px; /* Adiciona margem interna nas laterais da tela */
         }
         .content {
-            width: 80%; /* Ajuste a largura conforme necessário */
+            width: 100%; /* Ajuste a largura conforme necessário */
             max-width: 600px; /* Define um limite máximo de largura */
-            padding: 0 20px; /* Adiciona margem interna nas laterais da tela */
+            padding: 20px; /* Adiciona margem interna dentro da div */
+            box-sizing: border-box;
+            background-color: #f9f9f9; /* Fundo para destacar a área do conteúdo */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+            overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura */
+            max-height: 80vh; /* Define um limite máximo de altura */
         }
         h2 {
             text-align: center;
