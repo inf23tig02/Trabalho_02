@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add images dynamically from the internet
     var images = [
-        { src: "https://via.placeholder.com/600x400?text=Desporto+1", alt: "Pessoa correndo ao ar livre" },
-        { src: "https://via.placeholder.com/600x400?text=Desporto+2", alt: "Grupo de amigos jogando futebol" },
-        { src: "https://via.placeholder.com/600x400?text=Desporto+3", alt: "Mulher praticando yoga" }
+        { src: "https://informa-rio.com/wp-content/uploads/2021/07/correr-ao-ar-livre-1024x640.jpg", alt: "Pessoa correndo ao ar livre" },
+        { src: "https://img.freepik.com/fotos-premium/grupo-de-amigos-se-divertindo-na-praia-jogando-futebol_186382-781.jpg", alt: "Grupo de amigos jogando futebol" },
+        { src: "https://www.tendaatacado.com.br/dicas/wp-content/uploads/2021/07/interna-como-fazer-yoga.jpg", alt: "Mulher praticando yoga" }
     ];
 
     var gallery = document.getElementById("imageGallery");
