@@ -16,12 +16,15 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Mantém a imagem fixa no fundo */
+            padding-top: 60px; /* Ajusta o espaçamento para não cortar o conteúdo sob o header */
         }
         header {
             background-color: transparent; /* Fundo transparente */
             padding: 10px 20px; /* Espaçamento interno */
-            position: relative; /* Permite ajustar a posição do header */
+            position: fixed; /* Fixa o header no topo */
+            width: 100%; /* Garante que o header ocupe toda a largura */
             z-index: 1; /* Garante que o header fique acima da imagem de fundo */
+            box-shadow: none; /* Remove qualquer sombra */
         }
         .container {
             flex: 1;
