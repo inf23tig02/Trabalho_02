@@ -46,6 +46,11 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: top 0.3s;
+}
+
+header.hidden {
+    top: -100px; /* Ajuste para ocultar o cabeçalho */
 }
 
 header h1 {
