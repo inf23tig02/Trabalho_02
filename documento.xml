@@ -1,102 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<desporto>
-  <beneficios>
-    <beneficio>
-      <nome>Redução do Estresse</nome>
-      <descricao>A prática regular de exercícios ajuda a diminuir os níveis de cortisol.</descricao>
-    </beneficio>
-    <beneficio>
-      <nome>Melhoria do Humor</nome>
-      <descricao>Liberação de endorfinas durante a atividade física.</descricao>
-    </beneficio>
-  </beneficios>
-</desporto>
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Header Styling */
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content Styling */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-thead {
-    background-color: #007bff;
-    color: white;
-}
-
-td, th {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    body {
-        font-size: 0.9em;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-}
+<website>
+    <header>
+        <title>A Influência do Desporto na Saúde Mental</title>
+        <navigation>
+            <menu>
+                <item>
+                    <name>Início</name>
+                    <link>index.html</link>
+                </item>
+                <item>
+                    <name>Benefícios Psicológicos</name>
+                    <link>beneficios.html</link>
+                </item>
+                <item>
+                    <name>Interação Social</name>
+                    <link>interacao.html</link>
+                </item>
+                <item>
+                    <name>Conclusão e Recursos</name>
+                    <link>conclusao.html</link>
+                </item>
+            </menu>
+        </navigation>
+    </header>
+    <main>
+        <section id="intro">
+            <title>Introdução</title>
+            <paragraph>A prática de desporto é amplamente reconhecida por seus benefícios à saúde física, mas seu impacto na saúde mental também é significativo.</paragraph>
+        </section>
+        <section id="benefits">
+            <title>Benefícios do Desporto</title>
+            <paragraph>O desporto traz diversos <strong>benefícios psicológicos</strong> que são essenciais para uma boa saúde mental.</paragraph>
+            <benefitsList>
+                <benefit>
+                    <name>Redução do estresse</name>
+                    <icon>🧘‍♂️</icon>
+                </benefit>
+                <benefit>
+                    <name>Melhoria do humor</name>
+                    <icon>😄</icon>
+                </benefit>
+                <benefit>
+                    <name>Aumento da autoestima</name>
+                    <icon>🚀</icon>
+                </benefit>
+                <benefit>
+                    <name>Promoção da resiliência</name>
+                    <icon>💪</icon>
+                </benefit>
+            </benefitsList>
+        </section>
+        <section id="definitions">
+            <title>Definições Importantes</title>
+            <definitions>
+                <definition>
+                    <term>Endorfinas</term>
+                    <description>Hormônios liberados durante a prática de exercícios físicos que ajudam a melhorar o humor.</description>
+                </definition>
+                <definition>
+                    <term>Resiliência</term>
+                    <description>A capacidade de se recuperar rapidamente de dificuldades.</description>
+                </definition>
+            </definitions>
+        </section>
+        <section id="extraContent">
+            <title>Conteúdo Extra</title>
+            <toggleButton>Mostrar/Ocultar Conteúdo Extra</toggleButton>
+            <extraContent class="hidden">
+                <paragraph>Participar em desportos coletivos como futebol ou basquetebol promove o desenvolvimento de habilidades sociais e de trabalho em equipe, essenciais para a saúde mental.</paragraph>
+            </extraContent>
+        </section>
+    </main>
+    <footer>
+        <paragraph>&copy; 2024 Tecnologias de Internet</paragraph>
+    </footer>
+</website>
