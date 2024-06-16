@@ -5,70 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conclusão e Recursos</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            box-sizing: border-box;
-            background-color: #ffffff; /* Cor de fundo branca para o body */
-            padding-top: 60px; /* Espaço para o header */
-            font-family: Arial, sans-serif; /* Fonte padrão */
-        }
-        header {
-            padding: 10px 20px; /* Espaçamento interno */
-            position: fixed; /* Fixa o header no topo */
-            width: 100%; /* Garante que o header ocupe toda a largura */
-            z-index: 1; /* Garante que o header fique acima do conteúdo */
-        }
-        .container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            overflow: auto;
-            background-color: #ffffff; /* Cor de fundo branca para o container */
-            margin-top: 60px; /* Espaço para compensar o header fixo */
-        }
-        .content {
-            width: 90%;
-            box-sizing: border-box;
-            background-color: #ffffff; /* Cor de fundo branca para o retângulo */
-            padding: 20px;
-        }
-        h1 {
-            text-align: left; /* Alinha o título à esquerda */
-            font-size: 32px; /* Aumenta o tamanho da fonte */
-            margin-bottom: 10px; /* Espaço abaixo do título */
-        }
-        h2 {
-            font-size: 40px; /* Aumenta o tamanho da fonte */
-            margin-bottom: 20px; /* Espaço abaixo do título */
-            color: #01b9aa; /* Cor verde para o título */
-        }
-        p {
-            color: #ffffff; /* Cor mais clara para o texto */
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto; /* Centraliza o conteúdo na tela */
-        }
-        .descricao {
-            color: #666666; /* Cor verde para os benefícios */
-            font-size: 20px; /* Aumenta o tamanho da fonte */
-        }
-    </style>
 </head>
 <body>
     <header>
-            <h1>Conclusão e Recursos</h1>
+        <div class="container">
+            <h1>A Influência do Desporto na Saúde Mental</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -77,22 +18,47 @@
                     <li><a href="conclusao.html">Conclusão e Recursos</a></li>
                 </ul>
             </nav>
+        </div>
     </header>
-    <div class="container">
-        <main class="content">
-            <section>
-                <h2>Conclusão</h2>
-                <p><span class="descricao">A prática regular de desporto é uma estratégia eficaz para promover a saúde mental, oferecendo uma ampla gama de benefícios que vão desde a melhoria do humor e redução do estresse até o fortalecimento de habilidades sociais e a promoção de uma mentalidade resiliente.</p>
-            </section>
-            <section>
-                <h2>Recursos</h2>
-                <p><a href="documento.xml" download>Descarregar Documento XML</a></p>
-            </section>
-        </main>
-    </div>
+    <main class="container">
+        <section class="conclusion">
+            <h2>Conclusão</h2>
+            <p>O desporto tem um impacto significativo na saúde mental, promovendo benefícios como a redução do estresse, melhoria do humor, aumento da autoestima e promoção da resiliência.</p>
+        </section>
+        <section class="form-section">
+            <h2>Compartilhe sua Opinião</h2>
+            <form id="sportImportanceForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="importance">Qual a importância do desporto para você?</label>
+                    <select id="importance" name="importance" required>
+                        <option value="muito_importante">Muito Importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="pouco_importante">Pouco Importante</option>
+                        <option value="nao_importante">Não Importante</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comentários Adicionais:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Tecnologias de Internet</p>
+        <div class="container">
+            <p>&copy; 2024 Tecnologias de Internet</p>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

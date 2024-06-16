@@ -38,3 +38,28 @@ document.addEventListener("DOMContentLoaded", function() {
         lastScrollTop = scrollTop;
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("sportImportanceForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Collect form data
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var importance = document.getElementById("importance").value;
+        var comments = document.getElementById("comments").value;
+
+        // For demonstration, log the data to the console
+        console.log("Form Submission:");
+        console.log("Name:", name);
+        console.log("Email:", email);
+        console.log("Importance:", importance);
+        console.log("Comments:", comments);
+
+        // Clear the form
+        this.reset();
+
+        // Provide feedback to the user
+        alert("Obrigado pelo seu feedback!");
+    });
+});
