@@ -1,93 +1,94 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões do elemento */
 }
 
 /* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    line-height: 1.6;
-    background: url('img/img1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
+    font-family: 'Roboto', sans-serif; /* Define a fonte para 'Roboto' */
+    background-color: #f4f4f9; /* Define a cor de fundo */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background: url('img/img1.jpg') no-repeat center center fixed; /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o fundo */
+    position: relative; /* Define a posição como relativa para permitir o uso de ::before */
 }
 
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    content: ""; /* Cria um pseudo-elemento vazio */
+    position: absolute; /* Define a posição como absoluta */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Posiciona na esquerda */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
     z-index: -1; /* Coloca o overlay atrás do conteúdo */
 }
 
 /* Container */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    width: 90%; /* Define a largura como 90% do contêiner pai */
+    max-width: 1200px; /* Define a largura máxima como 1200px */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px */
 }
 
 /* Header Styling */
 header {
-    background-color: #01b9aa;
-    color: white;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: top 0.3s;
+    background-color: #01b9aa; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+    margin-bottom: 30px; /* Adiciona uma margem inferior de 30px */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona uma sombra ao cabeçalho */
+    width: 100%; /* Define a largura como 100% */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    z-index: 1000; /* Define um alto z-index para ficar acima de outros elementos */
+    transition: top 0.3s; /* Adiciona uma transição suave para a propriedade top */
 }
 
 header.hidden {
-    top: -100px; /* Ajuste para ocultar o cabeçalho */
+    top: -100px; /* Move o cabeçalho para fora da tela quando oculto */
 }
 
 header h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 2em;
+    text-align: center; /* Centraliza o texto do h1 */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+    font-size: 2em; /* Define o tamanho da fonte como 2em */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+    list-style: none; /* Remove a marcação padrão da lista */
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens da lista */
+    padding: 0; /* Remove o preenchimento da lista */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Adiciona margens laterais de 15px aos itens da lista */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: white; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Define o texto como negrito */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para mudanças de cor */
 }
 
 /* Main Content Styling */
 main {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 10px; /* Ajuste para adicionar espaço abaixo do cabeçalho fixo */
+    background: white; /* Define o fundo como branco */
+    padding: 30px; /* Adiciona um preenchimento de 30px */
+    border-radius: 10px; /* Adiciona bordas arredondadas de 10px */
+    margin-top: 10px; /* Adiciona uma margem superior para espaço abaixo do cabeçalho fixo */
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Adiciona uma margem inferior de 30px às seções */
 }
 
 .intro, .benefits, .media, .definitions, .extra-content {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px aos elementos com estas classes */
 }
+
 
 /* Grid Layout for Benefits Section */
 .benefits-list {
@@ -183,6 +184,22 @@ button:hover {
 /* Extra Content Styling */
 .extra-content .hidden {
     display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+thead th {
+    background-color: #f2f2f2;
 }
 
 /* Footer Styling */
